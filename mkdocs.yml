@@ -1,0 +1,95 @@
+site_name: WSTerminal Docs
+site_url: https://docs.ws-trading.co
+site_description: User manual for WSTerminal — the FVG pyramid futures bot by W.S. Trading Co.
+site_author: W.S. Trading Co.
+
+repo_name: bbenjamin1116/ws-trading-docs
+repo_url: https://github.com/bbenjamin1116/ws-trading-docs
+edit_uri: edit/master/docs/
+
+copyright: Copyright &copy; 2026 W.S. Trading Co.
+
+theme:
+  name: material
+  palette:
+    # Dark mode default — matches the bot's amber-on-ink Ticker Tape aesthetic
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: amber
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: amber
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+  font:
+    text: IBM Plex Sans
+    code: IBM Plex Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.tracking
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+
+nav:
+  - Home: index.md
+  - Getting started:
+      - Installation: getting-started/installation.md
+      - First-run wizard: getting-started/first-run.md
+  - Connecting your broker:
+      - IB Gateway setup: broker/ib-gateway.md
+      - TWS setup: broker/tws.md
+  - Configuration:
+      - Overview: configuration/overview.md
+      - Strategy parameters: configuration/strategy.md
+      - Risk parameters: configuration/risk.md
+  - Strategy:
+      - How FVG pyramid works: strategy/how-it-works.md
+  - Updates: updates.md
+  - Troubleshooting: troubleshooting.md
+  - License & billing: license-billing.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.snippets
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/solid/envelope
+      link: mailto:support@ws-trading.co
+      name: Email support
+    - icon: fontawesome/brands/github
+      link: https://github.com/bbenjamin1116
+      name: GitHub
