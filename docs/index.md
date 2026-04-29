@@ -27,5 +27,9 @@ Interactive Brokers via IB Gateway or TWS.
 
 ## Need help?
 
-Email **[support@ws-trading.co](mailto:support@ws-trading.co)** or join the
-community Discord (link coming soon).
+Email **[support@ws-trading.co](mailto:support@ws-trading.co)** — open to all
+buyers regardless of tier.
+
+**Pro members** also get access to a private Discord community for
+deeper strategy discussion, shared backtests, and winning configs. The
+invite link arrives in the Pro subscription confirmation email.
