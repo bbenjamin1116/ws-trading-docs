@@ -50,6 +50,7 @@ nav:
   - Connecting your broker:
       - IB Gateway setup: broker/ib-gateway.md
       - TWS setup: broker/tws.md
+      - Market data subscription: broker/market-data.md
   - Configuration:
       - Overview: configuration/overview.md
       - Strategy parameters: configuration/strategy.md
