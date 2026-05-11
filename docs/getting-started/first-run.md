@@ -91,35 +91,41 @@ Click **Continue**.
 
 ## Step 3 — Pick a preset
 
-The wizard shows a preset picker. Available options depend on your
-tier:
+The wizard shows a preset picker. Both tiers see the same two
+recommended presets:
 
-### If you're on **Basic**
+1. **WS Terminal Standard** (default, recommended) — the operator's
+   recommended preset and the configuration the published equity
+   curve is based on. ATR-based stops scaled to current volatility,
+   fixed 200-point take-profit, trailing-stop arms at 80% of TP,
+   multi-entry with risk-balanced add-on stops. Designed for
+   consistent compounding with shorter time-underwater stretches
+   than alternative configurations tested.
+2. **WS Terminal Max** — the same FVG strategy and same ATR-based
+   stop, but tunes the risk knobs harder for buyers who want higher
+   absolute returns and accept larger swings. Trailing stop arms
+   earlier (70% of TP) and trails tighter; add-on entries keep the
+   original stop so a fully-scaled-in position carries wider total
+   risk in exchange for larger upside on extended moves.
 
-Only one preset: **WS Terminal Standard**.
+### Pro additionally sees
 
-This is the conservative default that ships with the bot —
-fixed-stop, fixed-target, no breakeven, no trailing. Good starting
-point for new buyers who want to see the bot work before tweaking
-anything.
-
-### If you're on **Pro**
-
-Three options:
-
-1. **WS Terminal Pro** (default, recommended) — the operator-curated
-   preset. ATR-based stops scaled to current volatility, fixed
-   take-profit, trailing-stop arms at 80% of TP. Reflects the best
-   parameters from extensive backtesting on /NQ data.
-2. **WS Terminal Standard** — the same conservative preset Basic
-   ships with. Use this if you want a calmer config or want to
-   benchmark against a simpler baseline.
 3. **Custom presets** — any presets you've saved previously appear
-   here.
+   here. Pro licenses can create, rename, and delete custom presets
+   from the Config tab once the wizard is done.
 
 Pick one and click **Continue**. The bot loads the preset's values
-into the config; you can fine-tune individual parameters later from
-the Config tab.
+into the config; both tiers can adjust position sizing (initial
+contracts, max cap, per-add-on quantities) from the Config tab.
+Pro licenses can additionally fine-tune every other parameter
+(stops, take-profit, trailing, breakeven, schedule, multi-entry
+policy) from the same tab.
+
+!!! note "Hypothetical-performance disclosure"
+    Both preset descriptions above reference backtest results. Past
+    backtest performance is not indicative of future returns. See
+    the [Disclaimer page](https://ws-trading.co/disclaimer.html) for
+    the full NFA-prescribed hypothetical-performance disclosure.
 
 ## Step 4 — Confirm + start
 
