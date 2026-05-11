@@ -6,8 +6,8 @@
 
 - Your license key — where it comes from (Whop checkout email), where you enter it (first-run wizard or About modal)
 - The two tiers at launch — **Basic** ($39/mo) and **Pro** ($99/mo)
-  - What Basic includes: showcase backtester with dummy values, the live bot, basic config editing
-  - What Pro adds: real config values, "Load WSTerminal Config" preset, full backtester, user-saved presets
+  - What Basic includes: the live bot, both shipping presets (WS Terminal Standard + WS Terminal Max), adaptive volatility stops, trailing stops, multi-entry pyramiding, position-sizing edits
+  - What Pro adds: custom user presets (save/load/rename/delete), in-app backtester, granular configuration editing (every parameter beyond position sizing), Discord community access
 - Annual prepay discount (when available)
 - Free trial (Pro)
 - Cancelling, pausing, refund policy — links to the [Refund policy](https://ws-trading.co/refund.html)
